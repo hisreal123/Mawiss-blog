@@ -1,0 +1,12 @@
+.PostCard-container {
+  background-color: red;
+  padding: 10px 20px;
+}
+
+.PostCard-container .PostCardStyle {
+  padding: 30px 40px;
+}
+
+.PostCard-container .PostCardStyle .Profile {
+  font-size: .2rem;
+}

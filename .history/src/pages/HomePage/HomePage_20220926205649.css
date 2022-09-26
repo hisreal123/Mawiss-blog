@@ -1,0 +1,28 @@
+.PostCard-container {
+  padding: 10px 20px;
+}
+
+.PostCard-container .PostCardStyle {
+  padding: 30px 40px;
+}
+
+/* Profile */
+.PostCard-container .PostCardStyle .Profile {
+  margin-top: 10px;
+}
+.PostCard-container .PostCardStyle .Profile p {
+  font-size: 0.6rem;
+}
+
+/* Media Queries */
+/* medium screens */
+@media screen and (max-width: "540px") {
+  .PostCard-container .PostCardStyle .Profile p {
+    font-size: 0.1rem;
+    display: none;
+  }
+}
+
+@media  {
+    
+}

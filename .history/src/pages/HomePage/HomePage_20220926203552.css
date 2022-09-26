@@ -1,0 +1,14 @@
+.PostCard-container {
+  background-color: red;
+  padding: 10px 20px;
+}
+.PostCard-container .PostCardStyle {
+    padding: 20px 40px ;
+}
+
+.PostCard-container .PostCardStyle .content h3{
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-wid)
