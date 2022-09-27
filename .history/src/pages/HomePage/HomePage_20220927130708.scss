@@ -1,0 +1,78 @@
+.PostCard-container {
+  padding: 10px 20px;
+}
+
+/* Profile */
+.PostCard-container .PostCardStyle .Profile {
+}
+.PostCard-container .PostCardStyle .Profile p {
+  font-size: 0.6rem;
+}
+
+.MoreFromUs .MoreFromUsCard .Profile p {
+  font-size: 0.5rem;
+  font-weight: bolder;
+  color: gray !important;
+}
+
+/* medium screens */
+@media only screen and (min-width: 540px) {
+  .PostCard-container .PostCardStyle .Profile p {
+    font-size: 0.5rem;
+    font-weight: lighter;
+    /* display: none; */
+  }
+}
+
+/* RecentPost */
+.RecentPost {
+  .RecentPostCard .MoreFromUsCard {
+    height: max-content ;
+    background-color: green;
+    border: 1px solid gray;
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+    height: 300px;
+    img {
+      width: 100%;
+      position: relative;
+      height: ;
+    }
+
+    button {
+      position: absolute;
+      top: 5px;
+    }
+
+    .Profile {
+      color: gray;
+
+      h3 {
+        font-weight: thick;
+      }
+      p {
+        font-size: 0.5rem;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
