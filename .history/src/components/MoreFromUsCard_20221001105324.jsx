@@ -1,0 +1,64 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import client from "../client";
+import Button from "./Button";
+import Profile from "./Profile";
+
+export default function MoreFromUsCard({ addStyle }) {
+  const [morePost, setMorePost] = useState([]);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] {
+        title,slug,body,mainImage{
+          asset -> {
+            _id,
+            url
+          },
+          alt
+        }
+      }`
+      )
+      .then((data) => setMorePost(data))
+      .catch(console.error);
+  }, []);
+
+  return (
+    <div className={` ${addStyle} MoreFromUsCard   mb-2  py-1 px-3 `}>
+      {morePost.map((post) => (
+        <div
+          key={post.slug.current}
+          className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 w-full relative"
+        >
+          <div className="left top" key={post.slug.current}>
+            <Link to="/Blog" className="h-full  ">
+              <img
+                src={post.mainImage.asset.url}
+                alt={post.title}
+                className=" h-full object-cover"
+              />
+            </Link>
+          </div>
+          <div className="right bottom  ml-2 flex flex-col justify-center ">
+            <div className="btn mb-1">
+              <Button
+                content={post.category}
+                eventClicked=" Banner Button"
+                addStyles=" text-[.6rem] px-2 tracking-widest "
+              />
+            </div>
+
+            <div className="wrap ">
+              <Link to="/Blog">
+                <h3 className="text-sm ">{post.title}</h3>
+              </Link>
+
+              <Profile addStyle="flex items-center -mt-2 " />
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

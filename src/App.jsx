@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import HomePage from "./pages/HomePage/HomePage";
@@ -8,19 +8,17 @@ import Gaming from "./pages/Gaming";
 import Shop from "./pages/Shop";
 import Health from "./pages/Health";
 import Technology from "./pages/Technology";
-import Blog from "./pages/Blog";
+import Blog from "./pages/Blog/Blog";
 import ErrorPage from "./pages/ErrorPage";
 import SinglePage from "./pages/SinglePage";
+import Footer from "./components/Footer";
+import ToTop from "./components/Top";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="app">
-      <div className="bg-white absolute right-2 z-100 bottom-5 rounded-full p-2 h-10 w-10 shadow-md cursor-pointer hover:bg-black hover:text-white text-center">
-        <p>up</p>
-      </div>
-      <Nav />
+    <div className="app z-10 transition-all duration-300 ">
+      <Nav idTop="NavTop" />
+      <ToTop id="#NavTop" />
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/Features" element={<Features />} />
@@ -30,9 +28,10 @@ function App() {
         <Route path="/Health " element={<Health />} />
         <Route path="/Technology " element={<Technology />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog:slug" element={<SinglePage />} />
+        <Route path="/blog/:slug" element={<SinglePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

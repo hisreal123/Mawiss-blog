@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Mawiss"
-  },
   "api": {
     "projectId": "ops89y79",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Mawiss"
   },
   "plugins": [
     "@sanity/base",

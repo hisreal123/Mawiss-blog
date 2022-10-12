@@ -1,1 +1,0 @@
-const sanityClient  = require('@sanity/cl')

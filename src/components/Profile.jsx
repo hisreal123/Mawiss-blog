@@ -17,7 +17,7 @@ export default function Profile({ addStyle }) {
 
       <p className="dateIcon flex items-center text-[.5rem] md:text-[.7rem]">
         <BiTime className="  mr-1" />
-        <span>Apr 24, 2018</span>
+        <span className="truncate">Apr 24, 2018</span>
       </p>
     </div>
   );

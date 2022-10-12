@@ -9,15 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/cli": "^2.34.0",
+    "@sanity/client": "^3.4.1",
+    "framer-motion": "^7.5.3",
     "install": "^0.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "6",
-    "react-slick": "^0.29.0",
     "sass": "^1.55.0",
-    "slick-carousel": "^1.8.1",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

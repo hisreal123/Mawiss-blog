@@ -31,7 +31,7 @@ export default function NavItems({ fix, changeShowState }) {
           <Link to="/Technology ">Technology</Link>
         </li>
         <li className="px-2 py-3 hover:bg-black hover:text-white">
-          <Link to="/Blog">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li className="px-2 py-3 ml-3 hover:bg-black hover:text-white">
           <Link to="">
