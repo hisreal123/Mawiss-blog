@@ -45,7 +45,7 @@ export default function Blog() {
           <h2 className="text-md font-bold mb-3 mt-8 "> More From Us</h2>
           <MoreFromUsCard addStyle="MoreFromUsCard" />
         </div>
-        /* Aticles*/
+        
         <div className="Articles pb-20  bg-black">
           <div className="Articles  container px-7 h-full md:w-[80%] md:mx-auto  relative ">
             <h2 className="text-white text-md font-bold mb-4 mt-8 text-center ">
